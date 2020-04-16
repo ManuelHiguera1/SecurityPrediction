@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+      <h6 class="title">
+        Registrar Automovilista
+      </h6>
+      <ion-buttons slot="start" >
+        <ion-button routerLink="/home">
+          <ion-icon name="chevron-back-outline" color="light"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <br>
+  <div class = "ion-text-center"> <ion-label color="success"> Datos</ion-label></div>
+    
+  <ion-item lines="none">
+
+    <form [formGroup]="this.userService.form" (ngSubmit)="onSubmit()">
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input  formControlName="name" type="text"></ion-input>
+        <ion-label position="floating">Licensia</ion-label>
+        <ion-input  formControlName="license" type="text"></ion-input>    
+    </form>
+  </ion-item>
+
+  <div class = "ion-text-center" >
+    <ion-button type="submit" shape="round" fill="outline" color="success" (click)="onSubmit()">Registrar</ion-button> 
+  </div>
+  <br>
+
+</ion-content>
