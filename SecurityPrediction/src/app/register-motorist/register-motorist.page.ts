@@ -14,10 +14,10 @@ export class RegisterMotoristPage{
 
   onSubmit() {
     let data = this.userService.form.value;
-    this.userService.createUser(data)
+    this.userService.create_user(data)
       .then(res => {
            /*do something here....
            maybe clear the form or give a success message*/
       });
-}
+  }
 }

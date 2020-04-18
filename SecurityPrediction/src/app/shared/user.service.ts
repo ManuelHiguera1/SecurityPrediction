@@ -14,7 +14,7 @@ export class UserService {
         license: new FormControl('')
     })
   
-    createUser(data) {
+    create_user(data) {
       return new Promise<any>((resolve, reject) =>{
         this.firestore
           .collection("Users")
