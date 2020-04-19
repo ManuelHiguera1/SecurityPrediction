@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+      <h6 class="title">
+        Detalles de Robo
+      </h6>
+      <ion-buttons slot="start" >
+        <ion-button routerLink="/car-list">
+          <ion-icon name="chevron-back-outline" color="light"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-lines >
+    <div class="ion-text-center" >
+      <ion-text color="success"><h5>Datos del Automovilista</h5></ion-text>
+    </div>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Nombre</ion-label>
+      {{name}}
+    </ion-item>
+    <ion-item lines="none"> 
+      <ion-label position="fixed" color=success>Licencia</ion-label>
+      {{license}}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Teléfono</ion-label>
+      {{phone}}
+    </ion-item>
+    <div class="ion-text-center" >
+      <ion-text color="success"><h5>Fecha</h5></ion-text>
+    </div>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Fecha</ion-label>
+      {{date}}
+    </ion-item>
+    <div class="ion-text-center" >
+      <ion-text color="success"><h5>Ubicación</h5></ion-text>
+    </div>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Colonia</ion-label>
+      {{colony}}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Calle</ion-label>
+      {{street}}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Número</ion-label>
+      {{number}}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Referencia</ion-label>
+      {{reference}}
+    </ion-item>
+    <div class="ion-text-center" >
+      <ion-text color="success"><h5>Datos del Autómovil</h5></ion-text>
+    </div>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Marca</ion-label>
+      {{brand_car}}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Modelo</ion-label>
+      {{model_car}}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="fixed" color=success>Año</ion-label>
+      {{year_car}}
+    </ion-item>
+  </ion-list>
+</ion-content>

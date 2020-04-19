@@ -1,7 +1,6 @@
 import { Component} from '@angular/core';
 import {CarService} from '../shared/car.service'
 import {AlertController} from '@ionic/angular'
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-report-car',

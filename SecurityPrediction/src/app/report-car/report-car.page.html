@@ -18,11 +18,13 @@
   <ion-item lines="none">
     <form [formGroup]="this.carService.form" (ngSubmit)="onSubmit()">
       
-      <div class ="format_section" > <ion-label color="success">Datos</ion-label></div>
+      <div class ="format_section"  > <ion-label color="success">Datos</ion-label></div>
         <ion-label position="floating">Nombre</ion-label>
         <ion-input  formControlName="name" type="text"></ion-input>
         <ion-label position="floating">Licencia</ion-label>
         <ion-input  formControlName="license" type="text"></ion-input>  
+        <ion-label position="floating">Teléfono</ion-label>
+        <ion-input  formControlName="phone" type="text"></ion-input>  
         <br>
         <div class ="format_section"> <ion-label color="success">Fecha</ion-label></div>
         <ion-label position="floating">Fecha</ion-label>

@@ -11,6 +11,7 @@ export class CarService {
     form = new FormGroup({    
         name: new FormControl(''),
         license: new FormControl(''),
+        phone: new FormControl(''),
         date: new FormControl(''),
         brand_car: new FormControl(''),
         model_car: new FormControl(''),
@@ -30,7 +31,6 @@ export class CarService {
   }
 
   get_robberies() { 
-    return 
-     this.firestore.collection("Robberies").snapshotChanges();
+    return this.firestore.collection("Robberies").snapshotChanges();
   }
 }
